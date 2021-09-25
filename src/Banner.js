@@ -31,19 +31,25 @@ function Banner() {
         backgroundPosition: "center center",
       }}
     >
-      <div className="banner__contents">
-        {/* Background image*/}
-        {/* Title */}
-        <h1 className="banner__title">
-          {movie.title || movie.name || movie.original_name}
-        </h1>
-        {/* Div > 2 Buttons */}
-        <div className="banner__buttons">
-          <button className="banner__button">Play</button>
-          <button className="banner__button">My List</button>
+      <div className="banner__contents container">
+        <div className="row">
+          <h1 className="banner__title">
+            {movie.title || movie.name || movie.original_name}
+          </h1>
         </div>
-        {/* Description */}
-        <h1 className="banner__description">{movie.overview}</h1>
+
+        <div className="row">
+          <div className="banner__buttons">
+            <button className="banner__button">Play</button>
+            <button className="banner__button">My List</button>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-md-6">
+            <h1 className="banner__description">{movie.overview}</h1>
+          </div>
+        </div>
       </div>
       <div className="banner__fadeBottom"></div>
     </header>

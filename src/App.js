@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
 import "./App.css";
 import Row from "./Row";
@@ -8,26 +9,33 @@ import Nav from "./Nav";
 function App() {
   return (
     <div className="app">
-      {/* NavBar */}
-      <Nav />
-      {/* Banner */}
       <Banner />
-      <Row
-        title="NETFLIX ORIGINALS"
-        fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow={true}
-      />
-      <Row title="TRENDING" fetchUrl={requests.fetchTrending} />
-      <Row
-        title="TOP RATED"
-        fetchUrl={requests.fetchTopRated}
-        isLargeRow={true}
-      />
-      {/* <Row title="Action" fetchUrl={requests.fetchActionMovies} /> */}
-      {/* <Row title="Comedy" fetchUrl={requests.fetchComedyMovies} />
-      <Row title="Horrie" fetchUrl={requests.fetchHorroryMovies} />
-      <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
-      <Row title="Document" fetchUrl={requests.fetchDocumentaries} /> */}
+
+      <div className="container-fluid">
+        <div className="row">
+          <Row
+            title="NETFLIX ORIGINALS"
+            fetchUrl={requests.fetchNetflixOriginals}
+            isLargeRow={true}
+          />
+        </div>
+
+        <div className="row">
+          <Row
+            title="TOP RATED"
+            fetchUrl={requests.fetchTopRated}
+            isLargeRow={true}
+          />
+        </div>
+
+        {/* <Row title="COMEDY" fetchUrl={requests.fetchComedyMovies} /> */}
+        {/* <Row title="Horrie" fetchUrl={requests.fetchHorroryMovies} /> */}
+        {/* <Row title="ROMANCE" fetchUrl={requests.fetchRomanceMovies} /> */}
+        {/* <Row title="Document" fetchUrl={requests.fetchDocumentaries} /> */}
+      </div>
+
+      {/* NavBar */}
+      {/* <Nav /> */}
     </div>
   );
 }
