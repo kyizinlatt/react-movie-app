@@ -11,3 +11,10 @@ In the project directory, you can run:
 
 ## Demo 
 ### https://ukane-movie.web.app/
+
+### ToDo :: 
+
+- [ ] Auth
+- [ ] Make list
+- [ ] Movie detail
+- [ ] Movie trailer
