@@ -19,7 +19,13 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "browserslist": {}
+  "browserslist": {},
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
 }
